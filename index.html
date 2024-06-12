@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Music Player</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".mp3">
+            <button type="submit">Upload</button>
+        </form>
+        <audio controls id="audioPlayer">
+            <source src="img/ssvid.net - Coke Studio  Season 14  Pasoori  Ali Sethi x Shae Gill_360p.mp4" type="audio/mpeg" id="audioSource">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script src="work.js"></script>
+</body>
+</html>
